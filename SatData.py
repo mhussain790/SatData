@@ -33,7 +33,7 @@ class SatData:
         :return: output the matching dbn information to output.csv
         """
 
-        column_list = ["ddDBN", "School Name", "Number of Test Takers", "Critical Reading Mean", "Mathematics Mean", "Writing Mean"]
+        column_list = ["DBN", "School Name", "Number of Test Takers", "Critical Reading Mean", "Mathematics Mean", "Writing Mean"]
         for items in column_list:
             columns = ','.join(map(str, column_list))
         with open('output.csv', 'w') as outfile:
